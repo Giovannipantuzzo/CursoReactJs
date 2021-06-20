@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { ChallengesContext } from "../Contexts/ChallengesContext";
+import { ChallengesContext } from "./ChallengesContext";
 
 let countDownTimeout: NodeJS.Timeout;
 

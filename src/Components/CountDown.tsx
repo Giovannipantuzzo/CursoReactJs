@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
-import { CountDownContext } from "../Contexts/CountDownContext";
-import styles from "../styles/Components/CountDown.module.css";
+import { CountDownContext } from "../contexts/CountDownContext";
+import styles from "../styles/components/CountDown.module.css";
 
 export function CountDown() {
   const {
