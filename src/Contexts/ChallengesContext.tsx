@@ -72,7 +72,7 @@ export function ChallengesProvider({
 
     setActiveChallenge(challenge);
 
-    new Audio("/notification.mp3").play();
+    new Audio("/Tiringa Oficial - Bota pra arrombar nessa porra!.mp3").play();
 
     if (Notification.permission === "granted") {
       new Notification("Novo desafio, corno 🖕", {
