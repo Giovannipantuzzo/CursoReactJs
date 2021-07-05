@@ -1,4 +1,5 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import React from "react";
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { CountDown } from "../components/CountDown";
@@ -15,6 +16,10 @@ interface HomeProps {
   currentExperience: number;
   challengesCompleted: number;
 }
+
+const ThemeToggle = dynamic(() => import("../components/ThemeToggle"), {
+  ssr: false,
+});
 
 export default function Home(props: HomeProps) {
   return (
@@ -38,6 +43,7 @@ export default function Home(props: HomeProps) {
             <div>
               <ChallengeBox />
             </div>
+            <ThemeToggle />
           </section>
         </CountDownProvider>
       </div>
